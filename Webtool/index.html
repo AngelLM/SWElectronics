@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mercs Display Programmer</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<div id="central_section">
+  <p id = "titulo">Mercs Display Programmer</p>
+  <p id = "subtitulo"> <a href="http://www.angel-lm.com">Made by Angel LM</a></p>
+  <div id="top_section">
+    <div id= "menu_section">
+      <hr></hr>
+<a href="boba.html">Bobafett sequence example</a><a href="instructions.html">Instructions</a>
+    <hr></hr>
+    </div>
+    <div class="sequence_section">
+      <div class="leds_section">
+        <div class="topleds_section">
+          <div id="topleds1" class="ledsarriba">
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+          </div>
+          <div id="topleds2" class="ledsarriba">
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+          </div>
+          <div id="topleds3" class="ledsarriba">
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+          </div>
+          <div id="topleds4" class="ledsarriba">
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+          </div>
+          <div id="topleds5" class="ledsarriba">
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled"></div>
+            <div class="square topled last"></div>
+          </div>
+        </div>
+        <div class="sevenleds_section">
+          <div id="firstseg" class="seg">
+            <div class="square a"></div>
+            <div class="square b"></div>
+            <div class="square c"></div>
+            <div class="square d"></div>
+            <div class="square e"></div>
+            <div class="square f"></div>
+            <div class="square g"></div>
+            <div class="square p"></div>
+          </div>
+          <div id="secondseg" class="seg">
+            <div class="square a"></div>
+            <div class="square b"></div>
+            <div class="square c"></div>
+            <div class="square d"></div>
+            <div class="square e"></div>
+            <div class="square f"></div>
+            <div class="square g"></div>
+            <div class="square p"></div>
+          </div>
+          <div id="thirdseg" class="seg">
+            <div class="square a"></div>
+            <div class="square b"></div>
+            <div class="square c"></div>
+            <div class="square d"></div>
+            <div class="square e"></div>
+            <div class="square f"></div>
+            <div class="square g"></div>
+            <div class="square p"></div>
+          </div>
+          <div id="forthseg" class="seg">
+            <div class="square a"></div>
+            <div class="square b"></div>
+            <div class="square c"></div>
+            <div class="square d"></div>
+            <div class="square e"></div>
+            <div class="square f"></div>
+            <div class="square g"></div>
+            <div class="square p"></div>
+          </div>
+          <div id="fifthseg" class="seg last">
+            <div class="square a"></div>
+            <div class="square b"></div>
+            <div class="square c"></div>
+            <div class="square d"></div>
+            <div class="square e"></div>
+            <div class="square f"></div>
+            <div class="square g"></div>
+            <div class="square p"></div>
+          </div>
+        </div>
+      </div>
+      <div class="input_section">
+        <div class="time_input_section">
+          Time(ms):
+          <input class="timeseq" type="text" value="1000">
+        </div>
+        <div class="reset_input_section">
+          <input class="changeall offall" type="button" value="Turn leds off">
+          <input class="changeall onall" type="button" value="Turn leds on">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom_section">
+    <div id="bottone" align="center">
+      <input id="btn" type="button" Value="Add Sequence">
+      <input id="btnrem" type="button" Value="Remove Last Sequence">
+      <input id="gen" type="button" Value="Generate &amp; Preview">
+    </div>
+    <div id="validation"></div>
+    <div id="preview">
+      <div class="topleds_section">
+        <div id="topleds1" class="ledsarriba preview">
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+        </div>
+        <div id="topleds2" class="ledsarriba">
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+        </div>
+        <div id="topleds3" class="ledsarriba">
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+        </div>
+        <div id="topleds4" class="ledsarriba">
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+        </div>
+        <div id="topleds5" class="ledsarriba">
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled"></div>
+          <div class="square topled last"></div>
+        </div>
+      </div>
+      <div class="sevenleds_section">
+        <div id="firstseg" class="seg">
+          <div class="square a"></div>
+          <div class="square b"></div>
+          <div class="square c"></div>
+          <div class="square d"></div>
+          <div class="square e"></div>
+          <div class="square f"></div>
+          <div class="square g"></div>
+          <div class="square p"></div>
+        </div>
+        <div id="secondseg" class="seg">
+          <div class="square a"></div>
+          <div class="square b"></div>
+          <div class="square c"></div>
+          <div class="square d"></div>
+          <div class="square e"></div>
+          <div class="square f"></div>
+          <div class="square g"></div>
+          <div class="square p"></div>
+        </div>
+        <div id="thirdseg" class="seg">
+          <div class="square a"></div>
+          <div class="square b"></div>
+          <div class="square c"></div>
+          <div class="square d"></div>
+          <div class="square e"></div>
+          <div class="square f"></div>
+          <div class="square g"></div>
+          <div class="square p"></div>
+        </div>
+        <div id="forthseg" class="seg">
+          <div class="square a"></div>
+          <div class="square b"></div>
+          <div class="square c"></div>
+          <div class="square d"></div>
+          <div class="square e"></div>
+          <div class="square f"></div>
+          <div class="square g"></div>
+          <div class="square p"></div>
+        </div>
+        <div id="fifthseg" class="seg last">
+          <div class="square a"></div>
+          <div class="square b"></div>
+          <div class="square c"></div>
+          <div class="square d"></div>
+          <div class="square e"></div>
+          <div class="square f"></div>
+          <div class="square g"></div>
+          <div class="square p"></div>
+        </div>
+      </div>
+    </div>
+    <div id="panel">
+      <p><u>Sequence code</u></p>
+      <textarea id="generated_code" class="js-copytextarea" rows="3" cols="30" readonly>Click on "Generate &amp; Preview" button to obtain your sequence code.</textarea>
+      <p>
+        <button ID="js-textareacopybtn">Copy to Clipboard</button>
+      </p>
+    </div>
+  </div>
+
+
+
+  </body>
+  </html>

@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+#code{
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+
+
+body{
+	background:#686868;
+}
+
+#titulo{
+  font-family: 'Space Mono';
+	text-align: center;
+	font-size: 40px;
+	height: 25px;
+}
+
+h1{
+  font-family: 'Space Mono';
+  font-size: 35px;
+}
+
+#instructions{
+  font-family: 'Open Sans';
+	text-align: center;
+	font-size: 15px;
+  padding: 15px;
+	//height: 50px;
+}
+
+#instructions li{
+  padding: 5px;
+}
+
+#menu_section{
+  font-family: 'Open Sans';
+	text-align: center;
+	font-size: 20px;
+  padding: 5px;
+	height: 50px;
+}
+
+#menu_section a{
+  font-family: 'Open Sans';
+	text-align: center;
+	font-size: 18px;
+  margin: 50px;
+  padding-bottom: 10px;
+}
+
+#menu_section hr{
+  margin: 3px;
+}
+
+#subtitulo a{
+	text-decoration: none;
+}
+
+a{
+
+		color:black;
+}
+
+#subtitulo {
+	font-family: 'Open Sans',serif;
+  text-align: center;
+	font-size: 20px;
+	height: 25px;
+}
+
+#central_section {
+  padding-top: 1px;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: #F0F0F0   ;
+  margin: 0 auto;
+  width: 715px;
+  border-radius: 15px;
+}
+
+.sequence_section {
+  padding: 10px;
+  background-color: grey;
+  width: 100%-10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+#bottom_section {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%-10px;
+}
+
+.leds_section {
+  padding: 10px;
+  width: 527px;
+  display: inline-block;
+}
+
+.input_section {
+  padding: 0px;
+  width: 140px;
+  height: 209px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+
+.topleds_section {
+  margin-bottom: 15px;
+  background-color: black;
+  width: 527px;
+  height: 40px;
+}
+
+.sevenleds_section {
+  background-color: black;
+  width: 100%;
+  height: 134px;
+}
+
+#top_section .square {
+	background-color: #622f2f;
+}
+
+#preview .square {
+	background-color: black;
+}
+
+.square.topled {
+  float: left;
+  margin-right: 13px;
+  width: 14px;
+  height: 40px;
+}
+
+.square.topled.last {
+  margin-right: 0px;
+}
+
+.seg {
+  float: left;
+  width: 83px;
+  height: 134px;
+  margin-left: 12px;
+  margin-right: 13px;
+}
+
+.seg.last {
+  margin-right: 0px;
+}
+
+.square.a {
+  position: relative;
+  top: 0px;
+  left: 11px;
+  width: 50px;
+  height: 10px;
+}
+
+.square.b {
+  position: relative;
+  top: 1px;
+  left: 62px;
+  width: 10px;
+  height: 50px;
+}
+
+.square.c {
+  position: relative;
+  top: 13px;
+  left: 62px;
+  width: 10px;
+  height: 50px;
+}
+
+.square.d {
+  position: relative;
+  top: 14px;
+  left: 11px;
+  width: 50px;
+  height: 10px;
+}
+
+.square.e {
+  position: relative;
+  top: -47px;
+  left: 0px;
+  width: 10px;
+  height: 50px;
+}
+
+.square.f {
+  position: relative;
+  top: -159px;
+  left: 0px;
+  width: 10px;
+  height: 50px;
+}
+
+.square.g {
+  position: relative;
+  top: -158px;
+  left: 11px;
+  width: 50px;
+  height: 10px;
+}
+
+.square.p {
+  position: relative;
+  top: -106px;
+  left: 73px;
+  width: 10px;
+  height: 10px;
+}
+
+.timeseq {
+  width: 85px;
+  text-align: center;
+}
+
+.changeall {
+  //width: 90px;
+}
+
+.time_input_section {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.reset_input_section {
+}
+
+#bottone {
+  align: center;
+  margin-bottom: 20px;
+}
+
+#panel {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#generated_code {
+  text-align: center;
+}
+
+#preview {
+  padding: 25px;
+  background-color: grey;
+  width: 527px;
+  margin: 0 auto;
+  display: none;
+  border-radius: 15px;
+}
+
+#validation {
+  padding: 10px;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  color: red;
+  font-size: 15px;
+}
